@@ -1,4 +1,4 @@
-# 树莓派+opencv+flask家庭监控系
+# 树莓派+opencv+flask家庭监控系统
 ## 树莓派操作
 - 首先树莓派上需要安装python3
   - $ sudo  apt-get  update
