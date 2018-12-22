@@ -16,15 +16,20 @@
 - 检查安装
   - $ ls -al /usr/local/bin/python*
   
-##python3自带pip3
-###接下来安装模块
+## python3自带pip3
+
+### 接下来安装模块
+
 - 安装flask
   - $ pip3 install flask
 - 安装opencv
   - $ pip3 inshall opencv_python
-###然后
+  
+### 然后
+
 - 下载所有文件运行即可
   - $ python3 serve.py
-###写在最后
+  
+### 写在最后
 - 以后还会更新更多项目啊！
 - 加油吧！！！！！
