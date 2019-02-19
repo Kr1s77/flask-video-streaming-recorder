@@ -30,15 +30,19 @@
 ### 接下来安装模块
 
 - 安装flask
+```	 
     $ pip3 install flask==0.10.1
+```	 
 - 安装opencv
+```	 
      $ pip3 inshall opencv_python
-  
+```	   
 ### Then
 
 - 下载所有文件运行即可
+```	 
     $ python3 main.py
-  
+```	  
 ### 写在最后
 - 以后还会更新更多项目啊！
 - 加油吧！！！！！
