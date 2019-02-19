@@ -35,7 +35,7 @@
 ```	 
 - 安装opencv
 ```	 
-     $ pip3 inshall opencv_python
+     $ pip3 install opencv_python
 ```	   
 ### Then
 
