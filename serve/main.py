@@ -62,12 +62,6 @@ def logout():
     return redirect(url_for("login"))
 
 
-# 内嵌视频页面
-@app.route("/video")
-def video():
-    return render_template("video.html")
-
-
 def gen(camera):
     while True:
         frame = camera.get_frame()
@@ -78,9 +72,8 @@ def gen(camera):
 @app.route('/video_feed')
 def video_feed():
     # 返回一个响应对象
-    return Response(gen(VideoCamera()),
-                    mimetype='multipart/x-mixed-replace; boundary=frame')
+    return Response(gen(VideoCamera()), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, port=8080)
+    app.run(host='0.0.0.0', debug=True, port=8000)

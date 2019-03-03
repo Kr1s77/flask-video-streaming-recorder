@@ -10,10 +10,9 @@
 </head>
 <body>
 <h1>视频流监控系统demo</h1>
-    <a href='{{ url_for('logout') }}'>退出登录</a>
-<div id="video">
-    <iframe src={{ url_for('video') }} ></iframe>
+<div id="logout">
 </div>
+    <img src="{{ url_for('video_feed') }}">
 </body>
 
 </html>
