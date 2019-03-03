@@ -28,5 +28,8 @@ class VideoCamera(object):
         ret, jpeg = cv2.imencode('.jpg', image)
         # 对于 python2.7 或者低版本的 numpy 请使用 jpeg.tostring()
         # 转为二进制
+<<<<<<< HEAD
         # time.sleep(0.25)
+=======
+>>>>>>> f9bc1964f84eac7fc04966baca746053c06dee9e
         return jpeg.tobytes()

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,4 +21,28 @@
 	</form>
 	<div class="login_bg"></div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flask - login</title>
+</head>
+<body>
+	<form method="post" class="login_form">
+		<h1 class="login_title">用户登录(login)</h1>
+		<input type="text" name="username" placeholder="用户名(username)" class="input_txt">
+		<input type="password" name="password" placeholder="密码(password)" class="input_txt">
+
+        {% if errmsg  %} {# 判断是否有错误信息 #}
+
+		    <div class="error_tip" style="display: block">{{ errmsg }}</div>
+
+        {% endif %}
+
+		<input type="submit" value="登 录(login)" class="input_sub">
+	</form>
+	<div class="login_bg"></div>
+</body>
+>>>>>>> f9bc1964f84eac7fc04966baca746053c06dee9e
 </html>

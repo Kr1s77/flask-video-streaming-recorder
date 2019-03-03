@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # coding=UTF-8
 from datetime import timedelta
 
@@ -5,11 +6,20 @@ from flask import Flask, render_template, Response, request, redirect, url_for, 
 
 from serve.camera import VideoCamera
 
+=======
+from flask import Flask, render_template, Response, request, redirect, url_for, session
+
+from serve.camera import VideoCamera
+
+>>>>>>> f9bc1964f84eac7fc04966baca746053c06dee9e
 app = Flask(__name__)
 
 # session 加密秘钥
 app.secret_key = "fM3PEZwSRcbLkk2Ew82yZFffdAYsNgOddWoANdQo/U3VLZ/qNsOKLsQPYXDPon2t"
+<<<<<<< HEAD
 app.permanent_session_lifetime = timedelta(days=7)
+=======
+>>>>>>> f9bc1964f84eac7fc04966baca746053c06dee9e
 
 
 # 主页
@@ -25,11 +35,14 @@ def index():
 # 登录
 @app.route("/login", methods=["GET", "POST"])
 def login():
+<<<<<<< HEAD
     # 判断用户是否登录
     username = session.get("username")
     if username:
         return redirect(url_for(index))
 
+=======
+>>>>>>> f9bc1964f84eac7fc04966baca746053c06dee9e
     if request.method == "GET":
         return render_template("login.html")
     # 获取参数
@@ -48,6 +61,7 @@ def login():
     session["username"] = username
     return redirect(url_for("index"))
 
+<<<<<<< HEAD
 
 # 退出登录
 @app.route("/logout")
@@ -63,6 +77,8 @@ def logout():
 def video():
     return render_template("video.html")
 
+=======
+>>>>>>> f9bc1964f84eac7fc04966baca746053c06dee9e
 
 def gen(camera):
     while True:
@@ -79,4 +95,8 @@ def video_feed():
 
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     app.run(host='0.0.0.0', debug=True, port=8080)
+=======
+    app.run(host='0.0.0.0', debug=True, port=7000)
+>>>>>>> f9bc1964f84eac7fc04966baca746053c06dee9e

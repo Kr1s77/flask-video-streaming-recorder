@@ -71,6 +71,11 @@
  ```
   
 ### 写在最后
+<<<<<<< HEAD
 - 以后还会更新更多项目啊！
 - 加油吧！！！！！
 - Have a good time!
+=======
+- 大哥们给个star吧！
+- Have a good time!
+>>>>>>> f9bc1964f84eac7fc04966baca746053c06dee9e
