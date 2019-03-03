@@ -1,3 +1,5 @@
+import time
+
 import cv2
 
 
@@ -26,4 +28,5 @@ class VideoCamera(object):
         ret, jpeg = cv2.imencode('.jpg', image)
         # 对于 python2.7 或者低版本的 numpy 请使用 jpeg.tostring()
         # 转为二进制
+        # time.sleep(0.25)
         return jpeg.tobytes()

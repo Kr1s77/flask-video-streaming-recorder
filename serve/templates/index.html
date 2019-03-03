@@ -1,9 +1,19 @@
-<html>
-  <head>
-    <title>Video Streaming Demonstration</title>
-  </head>
-  <body>
-    <h1>Video Streaming Demonstration</h1>
-    <img src="{{ url_for('video_feed') }}">
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>监控系统</title>
+    <script src="../static/js/vue.min.js"></script>
+</head>
+<body>
+<h1>视频流监控系统demo</h1>
+    <a href='{{ url_for('logout') }}'>退出登录</a>
+<div id="video">
+    <iframe src={{ url_for('video') }} ></iframe>
+</div>
+</body>
+
 </html>
