@@ -39,10 +39,10 @@
 
 
 ### 🐍First you should install ``Python3.x`` on your Raspberry Pi
-```
-    	$ sudo  apt-get  update
-    	$ sudo  apt-get  upgrade
-```	
+
+>   $ sudo  apt-get  update
+>   $ sudo  apt-get  upgrade
+	
     	
 - 安装python``依赖环境``
 - install python ``Dependent environment``
@@ -53,22 +53,21 @@
 - 下载python3.6版本源码并解压
 - Download the python version 3.6 source code and decompress it
 
-```
-    	$ wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tgz
-    	$ tar zxvf Python-3.6.1.tgz
- ```   	
+>    	$ wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tgz
+>    	$ tar zxvf Python-3.6.1.tgz
+  	
 - 编译安装
 - Compilation and installation
-```
-	    $ cd Python-3.6.1
-	    $ sudo ./configure
-	    $ sudo make
-	    $ sudo make install
-```	    
+
+>	    $ cd Python-3.6.1
+>	    $ sudo ./configure
+>	    $ sudo make
+>	    $ sudo make install
+	    
 - 检查安装
 - Inspection and installation
 
-> $ ls -al /usr/local/bin/python*
+> 	$ ls -al /usr/local/bin/python*
   
 ### python3自带pip3
 
@@ -77,11 +76,11 @@
 - 安装flask
 - install flask
 
-
-> $ pip3 install flask==0.10.1
+> 	$ pip3 install flask==0.10.1
     	
 - 安装opencv
 - install opencv
+
 > $ pip3 install opencv_python
   
 ### 最后一步
@@ -90,7 +89,7 @@
 - 下载所有文件运行即可
 - run server.py
 
-> $ python3 server.py
+> 	$ python3 server.py
     	
  - 2019.2.21更新
  - 增加了登录，很简单的一个登录接口，并不需要数据库
@@ -99,8 +98,8 @@
  - 测试账户
  - Test account
  ```
-     Username: admin
-     Password: admin
+     Username:  admin
+     Password:  admin
  
  ```
  - 2019.3.4更新
