@@ -37,7 +37,7 @@
 
 ****
 
-
+## Installing
 ### 🐍First you should install ``Python3.x`` on your Raspberry Pi
 
 >   $ sudo  apt-get  update
@@ -83,8 +83,7 @@
 
 > $ pip3 install opencv_python
   
-### 最后一步
-- Then
+## Running the tests
 
 - 下载所有文件运行即可
 - run server.py
@@ -115,11 +114,16 @@
  - 添加视频录制和下载功能
  - 实现了真正的``高性能``，利用yield生成器，和多线程，丝一般的顺滑！
  
+## Author
+- Crise LYJ
+
 ### 欢迎像我提出issues
 
 - ``我将会继续改进代码``
   
-### 写在最后
+### Acknowledgments
+- Thanks for all!
+
 - ``Fiting !!!!!``
 
 - If you like this project ! Please give me a star! cool man!
