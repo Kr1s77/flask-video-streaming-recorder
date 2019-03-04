@@ -1,18 +1,20 @@
 # from datetime import timedelta
+from datetime import timedelta
 
 from flask import Flask, render_template, Response, jsonify, request, session, url_for, redirect
 from camera import VideoCamera
 
 app = Flask(__name__)
 
-# session 加密秘钥
+# session配置
 app.secret_key = "fM3PEZwSRcbLkk2Ew82yZFffdAYsNgOddWoANdQo/U3VLZ/qNsOKLsQPYXDPon2t"
-# app.permanent_session_lifetime = timedelta(days=7)
+app.permanent_session_lifetime = timedelta(days=7)
 
 video_camera = None
 global_frame = None
 
 
+# 主页
 @app.route('/')
 def index():
     # 模板渲染
@@ -22,11 +24,9 @@ def index():
     return render_template("index.html")
 
 
-
 # 登录
 @app.route("/login", methods=["GET", "POST"])
 def login():
-    # 判断用户是否登录
     username = session.get("username")
 
     if username:
@@ -59,6 +59,7 @@ def logout():
     return redirect(url_for("login"))
 
 
+# 录制状态
 @app.route('/record_status', methods=['POST'])
 def record_status():
     global video_camera
@@ -77,6 +78,7 @@ def record_status():
         return jsonify(result="stopped")
 
 
+# 获取视频流
 def video_stream():
     global video_camera
     global global_frame
@@ -96,16 +98,16 @@ def video_stream():
                    b'Content-Type: image/jpeg\r\n\r\n' + global_frame + b'\r\n\r\n')
 
 
+# 视频流
 @app.route('/video_viewer')
 def video_viewer():
     # 模板渲染
     username = session.get("username")
-    if username:
-        return Response(video_stream(),
-                        mimetype='multipart/x-mixed-replace; boundary=frame')
-
-    return redirect(url_for("login"))
+    if not username:
+        return redirect(url_for("login"))
+    return Response(video_stream(),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', threaded=True)
+    app.run(host='0.0.0.0', threaded=True, debug=True)

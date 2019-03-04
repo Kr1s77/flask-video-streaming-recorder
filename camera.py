@@ -29,16 +29,17 @@ class RecordingThread(threading.Thread):
 
 class VideoCamera(object):
     def __init__(self):
-        # 打开摄像头
+        # 打开摄像头， 0代表笔记本内置摄像头
         self.cap = cv2.VideoCapture(0)
 
-        # Initialize video recording environment
+        # 初始化视频录制环境
         self.is_record = False
         self.out = None
 
-        # Thread for recording
+        # 视频录制线程
         self.recordingThread = None
 
+    # 退出程序释放摄像头
     def __del__(self):
         self.cap.release()
 
