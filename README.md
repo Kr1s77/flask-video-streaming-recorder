@@ -69,7 +69,7 @@
 
 > 	$ ls -al /usr/local/bin/python*
   
-### python3自带pip3
+### python3自带``pip3``
 
 ### 接下来安装模块
 
@@ -92,7 +92,7 @@
 > 	$ python3 server.py
     	
  - 2019.2.21更新
- - 增加了登录，很简单的一个登录接口，并不需要数据库
+ - 增加了登录，很简单的一个登录接口，并不需要``数据库``
  - Increased login, a simple login interface, does not need a database
  
  - 测试账户
@@ -115,7 +115,7 @@
  - 添加视频录制和下载功能
   
 ### 写在最后
-- Fiting !!!!!
+- ``Fiting !!!!!``
 
 - If you like this project ! Please give me a star! cool man!
 
