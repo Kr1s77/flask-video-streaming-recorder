@@ -18,7 +18,7 @@ def index():
     # 模板渲染
     username = session.get("username")
     if username:
-        return render_template('index.html')
+        return render_template("index.html")
     return redirect(url_for("login"))
 
 
@@ -27,15 +27,15 @@ def index():
 def login():
     # 判断用户是否登录
     username = session.get("username")
+
     if username:
-        return redirect(url_for(index))
+        return redirect(url_for("index"))
 
     if request.method == "GET":
         return render_template("login.html")
     # 获取参数
     username = request.form.get("username")
     password = request.form.get("password")
-
     # 校验参数
     if not all([username, password]):
         return render_template("login.html", errmsg="参数不足")
@@ -43,9 +43,9 @@ def login():
     # 校验对应的管理员用户数据
     if not username == "admin" and password == "admin":
         return render_template("login.html", errmsg="用户名或密码错误")
-
     # 验证通过
     session["username"] = username
+
     return redirect(url_for("index"))
 
 

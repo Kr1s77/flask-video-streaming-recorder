@@ -1,23 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>flask - login</title>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link href="../static/css/style.css" rel='stylesheet' type='text/css'/>
+    <!--字体-->
+    <link href='http://fonts.useso.com/css?family=PT+Sans:400,700,400italic,700italic|Oswald:400,300,700'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+    <!--//js-->
+    <script src="http://ajax.useso.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
-	<form method="post" class="login_form">
-		<h1 class="login_title">用户登录(login)</h1>
-		<input type="text" name="username" placeholder="用户名(username)" class="input_txt">
-		<input type="password" name="password" placeholder="密码(password)" class="input_txt">
+<script>$(document).ready(function (c) {
+    $('.close').on('click', function (c) {
+        $('.login-form').fadeOut('slow', function (c) {
+            $('.login-form').remove();
+        });
+    });
+});
+</script>
+<!--SIGN UP-->
+<h1>家庭监控系统</h1>
+<div class="login-form">
+    <div class="close"></div>
+    <div class="head-info">
+        <label class="lbl-1"> </label>
+        <label class="lbl-2"> </label>
+        <label class="lbl-3"> </label>
+    </div>
+    <div class="clear"></div>
+    <div class="avtar">
+        <img src="../static/images/avtar.png"/>
+    </div>
+    <form method="post" action="{{ url_for("login") }}">
+        <input type="text" class="text" name="username">
+        <div class="key">
+            <input type="password" name="password">
+        </div>
+            <div class="signin">
+        <input type="submit" value="Login">
+        {% if errmsg %} {# 判断是否有错误信息 #}
 
-        {% if errmsg  %} {# 判断是否有错误信息 #}
-
-		    <div class="error_tip" style="display: block">{{ errmsg }}</div>
+            <div class="error_tip" style="display: block">{{ errmsg }}</div>
 
         {% endif %}
+    </div>
+    </form>
 
-		<input type="submit" value="登 录(login)" class="input_sub">
-	</form>
-	<div class="login_bg"></div>
+</div>
+<div class="copy-rights">
+    <p> Copyright@2019 可以在我的Github上找到我 <a href="https://github.com/CriseLYJ" target="_blank" title="Github">Github</a>
+        如果喜欢记得star <a href="https://criselyj.github.io/" title="Github" target="_blank">Blog</a></p>
+</div>
+
 </body>
-<!DOCTYPE html>
+</html>
