@@ -8,7 +8,7 @@ buttonRecord.onclick = function () {
     buttonRecord.disabled = true;
     buttonStop.disabled = false;
 
-    // disable download link
+    // 禁用下载链接
     var downloadLink = document.getElementById("download");
     downloadLink.text = "";
     downloadLink.href = "";
@@ -17,7 +17,7 @@ buttonRecord.onclick = function () {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
-            // alert(xhr.responseText);
+            alert(xhr.responseText);
         }
     }
     xhr.open("POST", "/record_status");
@@ -33,11 +33,11 @@ buttonStop.onclick = function () {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
-            // alert(xhr.responseText);
+            alert(xhr.responseText);
 
-            // enable download link
+            // 设置下载链接
             var downloadLink = document.getElementById("download");
-            downloadLink.text = "Download Video";
+            downloadLink.text = "下载视频";
             downloadLink.href = "/static/video.avi";
         }
     }

@@ -42,18 +42,20 @@
         <img src="../static/images/avtar.png"/>
     </div>
     <form method="post" action="{{ url_for("login") }}">
-        <input type="text" class="text" name="username">
+        <input type="text" class="text" name="username" value="Username" onfocus="this.value = '';"
+               onblur="if (this.value == '') {this.value = 'Username';}">
         <div class="key">
-            <input type="password" name="password">
+            <input type="password" name="password" value="Passowrd" onfocus="this.value = '';"
+                   onblur="if (this.value == '') {this.value = 'Password';}">
         </div>
-            <div class="signin">
-        <input type="submit" value="Login">
-        {% if errmsg %} {# 判断是否有错误信息 #}
+        <div class="signin">
+            <input type="submit" value="Login">
+            {% if errmsg %} {# 判断是否有错误信息 #}
 
-            <div class="error_tip" style="display: block">{{ errmsg }}</div>
+                <div class="error_tip" style="display: block">{{ errmsg }}</div>
 
-        {% endif %}
-    </div>
+            {% endif %}
+        </div>
     </form>
 
 </div>

@@ -17,9 +17,10 @@ global_frame = None
 def index():
     # 模板渲染
     username = session.get("username")
-    if username:
-        return render_template("index.html")
-    return redirect(url_for("login"))
+    if not username:
+        return redirect(url_for("login"))
+    return render_template("index.html")
+
 
 
 # 登录
