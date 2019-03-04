@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-    <img src="https://github.com/CriseLYJ/flask-video-streaming-recorder/blob/master/img/main.png"
+    <img src="https://github.com/CriseLYJ/flask-video-streaming-recorder/blob/master/img/main.jpg?raw=true" 
         alt="Master">
 </p>
 
@@ -46,9 +46,9 @@
     	
 - 安装python``依赖环境``
 - install python ``Dependent environment``
-```
-    $ sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev
- ```
+
+>    $ sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev
+
     
 - 下载python3.6版本源码并解压
 - Download the python version 3.6 source code and decompress it
@@ -112,7 +112,7 @@
  
  - 优化前端
 
- ![Alt text](./img/index.png)
+ ![Alt text](./img/index.jpg)
  
  - 添加视频录制和下载功能
   
