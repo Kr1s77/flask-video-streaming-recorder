@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>监控系统</title>
+    <style>
+        .top{
+            background-color: green;
+            width: 100%;
+            height: 10%;
+        }
+    </style>
+</head>
+<body>
+<h1>视频流媒体直播</h1>
+<div class="top">
+    <div class="recorder" id="recorder">
+        <button id="record">录制</button>
+        <button id="stop">暂停</button>
+        <a href="{{ url_for('logout') }}">退出登录</a>
+
+        <a id="download"></a>
+        <script type="text/javascript" src="{{ url_for('static', filename='recorder.js') }}"></script>
+    </div>
+</div>
+<img id="video" src="{{ url_for('video_viewer') }}">
+</body>
+</html>
