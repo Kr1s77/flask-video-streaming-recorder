@@ -47,16 +47,16 @@
 - install opencv
 
 
-     	$ pip3 inshall opencv_python
+     	$ pip3 install opencv_python
   
 ### 然后
 - Then
 
 - 下载所有文件运行即可
-- run main.py
+- run server.py
 
 
-    	$ python3 main.py
+    	$ python3 server.py
     	
  - 2019.2.21更新
  - 增加了登录，很简单的一个登录接口，并不需要数据库
@@ -69,6 +69,9 @@
      password: admin
  
  ```
+ - 2019.3.4更新
+ - 添加多线程和录制下载等功能
+ - 支持多设置访问，退出登录回复正常
   
 ### 写在最后
 - 以后还会更新更多项目啊！
