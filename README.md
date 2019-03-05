@@ -1,4 +1,4 @@
-<h2 align="center"><code>树莓派 flask+opencv监控系统</code></h2>
+<h2 align="center"><code>Raspberry Pi flask+opencv Surveillance System</code></h2>
 
 <br>
 
@@ -44,19 +44,18 @@
 >   $ sudo  apt-get  upgrade
 	
     	
-- 安装python``依赖环境``
+- Install python``dependent environment``
 - install python ``Dependent environment``
 
 >    $ sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev
 
     
-- 下载python3.6版本源码并解压
+- Download the python3.6 version source and extract it
 - Download the python version 3.6 source code and decompress it
 
 >    	$ wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tgz
 >    	$ tar zxvf Python-3.6.1.tgz
   	
-- 编译安装
 - Compilation and installation
 
 >	    $ cd Python-3.6.1
@@ -64,62 +63,58 @@
 >	    $ sudo make
 >	    $ sudo make install
 	    
-- 检查安装
-- Inspection and installation
+- Check installation
 
 > 	$ ls -al /usr/local/bin/python*
-  
-### python3自带``pip3``
 
-### 接下来安装模块
 
-- 安装flask
-- install flask
+### Next install the module
+
+- Install flask
 
 > 	$ pip3 install flask==0.10.1
     	
-- 安装opencv
+- Install opencv
 - install opencv
 
 > $ pip3 install opencv_python
   
 # Running the tests
 
-- 下载所有文件运行即可
+- Download all files to run
 - run server.py
 
 > 	$ python3 server.py
     	
- - 2019.2.21更新
- - 增加了登录，很简单的一个登录接口，并不需要``数据库``
+ - 2019.2.21 update
+
  - Increased login, a simple login interface, does not need a database
  
- - 测试账户
  - Test account
  ```
      Username:  admin
      Password:  admin
  ```
- - 2019.3.4更新
- - 添加多线程和录制下载等功能
- - 支持多设置访问，退出登录回复正常
+ - 2019.3.4 update
+ - Add multi-threading and recording downloads
+ - Support multi-device access, logout login is normal
  
- - 添加了优美的登录界面
+ - Added a beautiful login interface
  ![Alt text](./img/login.png)
  
- - 优化前端
+ - Optimization homepage
 
  ![Alt text](./img/index.jpg)
  
- - 添加视频录制和下载功能
- - 实现了真正的``高性能``，利用yield生成器，和多线程，丝一般的顺滑！
+ - Add video recording and download capabilities
+ - Realized the ``high performance``, using the yield generator, and multi-threading, silky smooth!
  
 # Author
 - Crise LYJ
 
-## 欢迎像我提出issues
+## You can give me some issues
 
-- ``我将会继续改进代码``
+- ``I will continue to improve the code``
   
 # Acknowledgments
 - Thanks for all!
@@ -131,4 +126,3 @@
 - Have a good time!
 
  ![Alt text](./img/hha.jpeg)
-
