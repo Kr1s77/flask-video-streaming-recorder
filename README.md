@@ -119,10 +119,6 @@
 # Acknowledgments
 - Thanks for all!
 
-- ``Fiting !!!!!``
-
-- If you like this project ! Please give me a star! cool man!
-
 - Have a good time!
 
  ![Alt text](./img/hha.jpeg)
