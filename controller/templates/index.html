@@ -20,11 +20,11 @@
         <button id="record" class="btn">录制视频</button>
         <button id="stop" class="btn">暂停录制</button>
         <input type="button" class="btn" value="退出登录"
-               onclick="javascrtpt:window.location.href='{{ url_for('logout') }}'">
+               onclick="javascrtpt:window.location.href='{{ url_for('user.logout') }}'">
         <a id="download"></a>
         <script type="text/javascript" src="{{ url_for('static', filename='recorder.js') }}"></script>
     </div>
 </div>
-<img id="video" src="{{ url_for('video_viewer') }}">
+<img id="video" src="{{ url_for('home.video_viewer') }}">
 </body>
 </html>

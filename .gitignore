@@ -1,2 +1,3 @@
 .idea
-__pychache__/
+*py[cod]
+logs/log*
