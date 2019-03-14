@@ -82,9 +82,10 @@
 # Running the tests
 
 - Download all files to run
-- run server.py
+- run main.py
 
-> 	$ python3 server.py
+> 	$ python3 main.py -p 0.0.0.0
+> 当然你也可以使用Gunicorn来当做你的多线程服务器
     	
  - 2019.2.21 update
 
@@ -98,6 +99,13 @@
  - 2019.3.4 update
  - Add multi-threading and recording downloads
  - Support multi-device access, logout login is normal
+
+ - 2019.3.14 update
+ - 现在的目录结构是这个样子
+
+ ![](./img/tree.png)
+ 
+- 抽取了代码，进行了优化，就是这样目录看起来会很多
  
  - Added a beautiful login interface
  ![Alt text](./img/login.png)
