@@ -119,10 +119,6 @@
  
 # Author
 - Crise LYJ
-
-## You can give me some issues
-
-- ``I will continue to improve the code``
   
 # Acknowledgments
 - Thanks for all!
