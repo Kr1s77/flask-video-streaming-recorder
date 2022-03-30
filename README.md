@@ -117,12 +117,3 @@
  - Add video recording and download capabilities
  - Realized the ``high performance``, using the yield generator, and multi-threading, silky smooth!
  
-# Author
-- Crise LYJ
-  
-# Acknowledgments
-- Thanks for all!
-
-- Have a good time!
-
- ![Alt text](./img/hha.jpeg)
